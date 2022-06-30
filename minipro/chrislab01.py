@@ -16,6 +16,7 @@ while True:
             print("common let's play")
         else:
             print("I will go first")
+            break
         
     elif answer.lower() == "poker":
         input("nickname")
