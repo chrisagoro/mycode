@@ -21,4 +21,13 @@ while True:
     elif answer.lower() == "poker":
         input("nickname")
         board= input("Choose a board: ")
-        print("sure you want to challenge me?")
+        card= input("do you want to chose the first card: ")
+        if card == "yes":
+            print("There you go!")
+        else:
+            print("I will deal first")
+            break
+
+    elif answer.lower() == "slapme":
+        nickname= input("enter a nickname")
+
