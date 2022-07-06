@@ -1,7 +1,7 @@
 #/usr/bin/env python3
 
 
-game = ["Chess", "Poker", "Slapme", "Battle_royal", "Survivor"]
+game = ["Chess", "Poker", "Survivor", "Battle_royal"]
 answer = " "
 
 while True:
@@ -19,7 +19,7 @@ while True:
             break
         
     elif answer.lower() == "poker":
-        input("nickname")
+        input("Enter a nickname: ")
         board= input("Choose a board: ")
         card= input("do you want to chose the first card: ")
         if card == "yes":
@@ -28,6 +28,25 @@ while True:
             print("I will deal first")
             break
 
-    elif answer.lower() == "slapme":
-        nickname= input("enter a nickname")
 
+    elif answer.lower() == "survivor":
+        nickname= input("Enter a nickname: ")
+        path= input("Choose a terrain: ")
+        vehicle= input("select your car: ")
+        rules= input("Do you know the rules: ")
+        if rules == "yes":
+            print("Let's go for a ride..!!")
+        else:
+            print("Check out game rules and restart game!!")
+            break
+
+    elif answer.lower() == "battle_royal":
+        nickname= input("Enter a name: ")
+        player= input("choose a player: ")
+        weapon= input("select your weapon: ")
+        ding= input("Are you ready? ")
+        if ding == "yes":
+            print("fight")
+        else:
+            print("Are you scare you would loose to me?")
+            break
